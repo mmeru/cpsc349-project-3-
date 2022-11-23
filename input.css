@@ -22,3 +22,9 @@
     color:blue;
     background-color: white;
 }
+
+.guesses {
+    text-align: center;
+    font-size: x-large;
+    padding-bottom: 2rem;
+}

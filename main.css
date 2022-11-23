@@ -596,8 +596,21 @@ video {
   border-width: 1px;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .lowercase {
@@ -673,4 +686,10 @@ video {
 .alphabet:hover {
   color:blue;
   background-color: white;
+}
+
+.guesses {
+  text-align: center;
+  font-size: x-large;
+  padding-bottom: 2rem;
 }

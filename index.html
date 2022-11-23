@@ -8,8 +8,8 @@
   </head>
   <body>
     <main>
-        <h1 class="text-center">Welcome to Hangman!</h1>
-        <div class="mx-auto block w-2/5 h-2/5"> 
+        <h1 class="text-center text-2xl pb-4">Welcome to Hangman!</h1>
+        <div class="mx-auto block w-2/5 h-2/5 pb-8"> 
             <img class="show" src="/hangman-images/Hangman0.png" alt="Hangman with no parts" />
             <img class="hidden" src="/hangman-images/Hangman1.png" alt="Hangman with head" />
             <img class="hidden" src="/hangman-images/Hangman2.png" alt="Hangman with head and body" />
@@ -17,6 +17,8 @@
             <img class="hidden" src="/hangman-images/Hangman4.png" alt="Hangman with head,body, and two arms" />
             <img class="hidden" src="/hangman-images/Hangman5.png" alt="Hangman with head, body, two arms, and a leg" />
             <img class="hidden" src="/hangman-images/Hangman6.png" alt="Hangman with full body" />
+        </div>
+        <div class="guesses" id="guesses">
         </div>
         <div class="text-center">
             <button class="alphabet">A</button>
@@ -50,6 +52,6 @@
             <button class="alphabet">Z</button>
         </div>
     </main>
-    <script type= "module" src="main.js"></script>
+    <script type= "module" src="./main.js"></script>
   </body>
 </html>
