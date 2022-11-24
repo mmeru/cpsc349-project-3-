@@ -688,6 +688,10 @@ video {
   background-color: white;
 }
 
+.afterClicked{
+  cursor: not-allowed;
+}
+
 .guesses {
   text-align: center;
   font-size: x-large;
