@@ -1,11 +1,8 @@
-//Make the buttons correspond with the letters in the word
-import { guesses,word, hiddenWord, alphabet, secretWord} from './modules/createGuesses.js';
 //Make the buttons unclickable after being clicked once
-export var alphabetButton1 = document.getElementById('1');
+export const alphabetButton1 = document.getElementById('1');
 alphabetButton1.addEventListener('click', () =>{
     alphabetButton1.className = "alphabet afterClicked";
 });
-
 export var alphabetButton2 = document.getElementById('2');
 alphabetButton2.addEventListener('click', () =>{
     alphabetButton2.className = "alphabet afterClicked";
