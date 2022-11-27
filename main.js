@@ -37,7 +37,7 @@ const img6 = document.getElementById('img6');
 const img6src = document.getElementById('img6').src;
 const img7 = document.getElementById('img7');
 const img7src = document.getElementById('img7').src;
-var newGuessContent = document.createTextNode(secretWord);
+var newGuessContent = document.createTextNode(secretWord.join(" "));
 guessClass.append(newGuess);
 newGuess.append(newGuessContent);
 //Make buttons only clickable once 
@@ -79,7 +79,7 @@ alphabetButton1.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     //set the html to the new values using the DOM
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 }, {once:true});
 
 var alphabetButton2 = document.getElementById('2');
@@ -115,7 +115,7 @@ alphabetButton2.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton3 = document.getElementById('3');
@@ -151,7 +151,7 @@ alphabetButton3.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 }, {once:true});
 
 var alphabetButton4 = document.getElementById('4');
@@ -187,7 +187,7 @@ alphabetButton4.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton5 = document.getElementById('5');
@@ -223,7 +223,7 @@ alphabetButton5.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton6 = document.getElementById('6');
@@ -259,7 +259,7 @@ alphabetButton6.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton7 = document.getElementById('7');
@@ -295,7 +295,7 @@ alphabetButton7.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton8 = document.getElementById('8');
@@ -331,7 +331,7 @@ alphabetButton8.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton9 = document.getElementById('9');
@@ -367,7 +367,7 @@ alphabetButton9.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton10 = document.getElementById('10');
@@ -403,7 +403,7 @@ alphabetButton10.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton11 = document.getElementById('11');
@@ -439,7 +439,7 @@ alphabetButton11.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton12 = document.getElementById('12');
@@ -475,7 +475,7 @@ alphabetButton12.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton13 = document.getElementById('13');
@@ -511,7 +511,7 @@ alphabetButton13.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton14 = document.getElementById('14');
@@ -547,7 +547,7 @@ alphabetButton14.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton15 = document.getElementById('15');
@@ -583,7 +583,7 @@ alphabetButton15.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton16 = document.getElementById('16');
@@ -619,7 +619,7 @@ alphabetButton16.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton17 = document.getElementById('17');
@@ -655,7 +655,7 @@ alphabetButton17.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton18 = document.getElementById('18');
@@ -691,7 +691,7 @@ alphabetButton18.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton19 = document.getElementById('19');
@@ -727,7 +727,7 @@ alphabetButton19.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton20 = document.getElementById('20');
@@ -763,7 +763,7 @@ alphabetButton20.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 }, {once:true});
 
 var alphabetButton21 = document.getElementById('21');
@@ -799,7 +799,7 @@ alphabetButton21.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton22 = document.getElementById('22');
@@ -835,7 +835,7 @@ alphabetButton22.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton23 = document.getElementById('23');
@@ -871,7 +871,7 @@ alphabetButton23.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton24 = document.getElementById('24');
@@ -907,7 +907,7 @@ alphabetButton24.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton25 = document.getElementById('25');
@@ -943,7 +943,7 @@ alphabetButton25.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 
 var alphabetButton26 = document.getElementById('26');
@@ -979,7 +979,7 @@ alphabetButton26.addEventListener('click', () =>{
         img7.className = "show";
     } 
     else img7.className = "hidden";
-    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff;
+    newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
 });
 //console logs for testing values 
 console.log(word);
