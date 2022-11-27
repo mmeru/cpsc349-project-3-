@@ -46,6 +46,7 @@ var alphabetButton1 = document.getElementById('1');
 //This onclick event triggers for the alphabet 'A' key 
 alphabetButton1.addEventListener('click', () =>{
     alphabetButton1.className = "alphabet afterClicked";
+    document.getElementById('1').style.display = "none";
     //call letter change 
     secretWordChange();
     //change image to the new image if the answer is wrong by checking each image value against array
@@ -85,6 +86,7 @@ alphabetButton1.addEventListener('click', () =>{
 var alphabetButton2 = document.getElementById('2');
 alphabetButton2.addEventListener('click', () =>{
     alphabetButton2.className = "alphabet afterClicked";
+    document.getElementById('2').style.display = "none";
     secretWordChange2();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -121,6 +123,7 @@ alphabetButton2.addEventListener('click', () =>{
 var alphabetButton3 = document.getElementById('3');
 alphabetButton3.addEventListener('click', () =>{
     alphabetButton3.className = "alphabet afterClicked";
+    document.getElementById('3').style.display = "none";
     secretWordChange3();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -157,6 +160,7 @@ alphabetButton3.addEventListener('click', () =>{
 var alphabetButton4 = document.getElementById('4');
 alphabetButton4.addEventListener('click', () =>{
     alphabetButton4.className = "alphabet afterClicked";
+    document.getElementById('4').style.display = "none";
     secretWordChange4();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -193,6 +197,7 @@ alphabetButton4.addEventListener('click', () =>{
 var alphabetButton5 = document.getElementById('5');
 alphabetButton5.addEventListener('click', () =>{
     alphabetButton5.className = "alphabet afterClicked";
+    document.getElementById('5').style.display = "none";
     secretWordChange5();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -229,6 +234,7 @@ alphabetButton5.addEventListener('click', () =>{
 var alphabetButton6 = document.getElementById('6');
 alphabetButton6.addEventListener('click', () =>{
     alphabetButton6.className = "alphabet afterClicked";
+    document.getElementById('6').style.display = "none";
     secretWordChange6();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -265,6 +271,7 @@ alphabetButton6.addEventListener('click', () =>{
 var alphabetButton7 = document.getElementById('7');
 alphabetButton7.addEventListener('click', () =>{
     alphabetButton7.className = "alphabet afterClicked";
+    document.getElementById('7').style.display = "none";
     secretWordChange7();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -301,6 +308,7 @@ alphabetButton7.addEventListener('click', () =>{
 var alphabetButton8 = document.getElementById('8');
 alphabetButton8.addEventListener('click', () =>{
     alphabetButton8.className = "alphabet afterClicked";
+    document.getElementById('8').style.display = "none";
     secretWordChange8();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -337,6 +345,7 @@ alphabetButton8.addEventListener('click', () =>{
 var alphabetButton9 = document.getElementById('9');
 alphabetButton9.addEventListener('click', () =>{
     alphabetButton9.className = "alphabet afterClicked";
+    document.getElementById('9').style.display = "none";
     secretWordChange9();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -373,6 +382,7 @@ alphabetButton9.addEventListener('click', () =>{
 var alphabetButton10 = document.getElementById('10');
 alphabetButton10.addEventListener('click', () =>{
     alphabetButton10.className = "alphabet afterClicked";
+    document.getElementById('10').style.display = "none";
     secretWordChange10();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -409,6 +419,7 @@ alphabetButton10.addEventListener('click', () =>{
 var alphabetButton11 = document.getElementById('11');
 alphabetButton11.addEventListener('click', () =>{
     alphabetButton11.className = "alphabet afterClicked";
+    document.getElementById('11').style.display = "none";
     secretWordChange11();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -445,6 +456,7 @@ alphabetButton11.addEventListener('click', () =>{
 var alphabetButton12 = document.getElementById('12');
 alphabetButton12.addEventListener('click', () =>{
     alphabetButton12.className = "alphabet afterClicked";
+    document.getElementById('12').style.display = "none";
     secretWordChange12();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -481,6 +493,7 @@ alphabetButton12.addEventListener('click', () =>{
 var alphabetButton13 = document.getElementById('13');
 alphabetButton13.addEventListener('click', () =>{
     alphabetButton13.className = "alphabet afterClicked";
+    document.getElementById('13').style.display = "none";
     secretWordChange13();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -517,6 +530,7 @@ alphabetButton13.addEventListener('click', () =>{
 var alphabetButton14 = document.getElementById('14');
 alphabetButton14.addEventListener('click', () =>{
     alphabetButton14.className = "alphabet afterClicked";
+    document.getElementById('14').style.display = "none";
     secretWordChange14();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -553,6 +567,7 @@ alphabetButton14.addEventListener('click', () =>{
 var alphabetButton15 = document.getElementById('15');
 alphabetButton15.addEventListener('click', () =>{
     alphabetButton15.className = "alphabet afterClicked";
+    document.getElementById('15').style.display = "none";
     secretWordChange15();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -589,6 +604,7 @@ alphabetButton15.addEventListener('click', () =>{
 var alphabetButton16 = document.getElementById('16');
 alphabetButton16.addEventListener('click', () =>{
     alphabetButton16.className = "alphabet afterClicked";
+    document.getElementById('16').style.display = "none";
     secretWordChange16();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -625,6 +641,7 @@ alphabetButton16.addEventListener('click', () =>{
 var alphabetButton17 = document.getElementById('17');
 alphabetButton17.addEventListener('click', () =>{
     alphabetButton17.className = "alphabet afterClicked";
+    document.getElementById('17').style.display = "none";
     secretWordChange17();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -661,6 +678,7 @@ alphabetButton17.addEventListener('click', () =>{
 var alphabetButton18 = document.getElementById('18');
 alphabetButton18.addEventListener('click', () =>{
     alphabetButton18.className = "alphabet afterClicked";
+    document.getElementById('18').style.display = "none";
     secretWordChange18();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -697,6 +715,7 @@ alphabetButton18.addEventListener('click', () =>{
 var alphabetButton19 = document.getElementById('19');
 alphabetButton19.addEventListener('click', () =>{
     alphabetButton19.className = "alphabet afterClicked";
+    document.getElementById('19').style.display = "none";
     secretWordChange19();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -733,6 +752,7 @@ alphabetButton19.addEventListener('click', () =>{
 var alphabetButton20 = document.getElementById('20');
 alphabetButton20.addEventListener('click', () =>{
     alphabetButton20.className = "alphabet afterClicked";
+    document.getElementById('20').style.display = "none";
     secretWordChange20();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -769,6 +789,7 @@ alphabetButton20.addEventListener('click', () =>{
 var alphabetButton21 = document.getElementById('21');
 alphabetButton21.addEventListener('click', () =>{
     alphabetButton21.className = "alphabet afterClicked";
+    document.getElementById('21').style.display = "none";
     secretWordChange21();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -805,6 +826,7 @@ alphabetButton21.addEventListener('click', () =>{
 var alphabetButton22 = document.getElementById('22');
 alphabetButton22.addEventListener('click', () =>{
     alphabetButton22.className = "alphabet afterClicked";
+    document.getElementById('22').style.display = "none";
     secretWordChange22();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -841,6 +863,7 @@ alphabetButton22.addEventListener('click', () =>{
 var alphabetButton23 = document.getElementById('23');
 alphabetButton23.addEventListener('click', () =>{
     alphabetButton23.className = "alphabet afterClicked";
+    document.getElementById('23').style.display = "none";
     secretWordChange23();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -877,6 +900,7 @@ alphabetButton23.addEventListener('click', () =>{
 var alphabetButton24 = document.getElementById('24');
 alphabetButton24.addEventListener('click', () =>{
     alphabetButton24.className = "alphabet afterClicked";
+    document.getElementById('24').style.display = "none";
     secretWordChange24();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -913,6 +937,7 @@ alphabetButton24.addEventListener('click', () =>{
 var alphabetButton25 = document.getElementById('25');
 alphabetButton25.addEventListener('click', () =>{
     alphabetButton25.className = "alphabet afterClicked";
+    document.getElementById('25').style.display = "none";
     secretWordChange25();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
@@ -949,6 +974,7 @@ alphabetButton25.addEventListener('click', () =>{
 var alphabetButton26 = document.getElementById('26');
 alphabetButton26.addEventListener('click', () =>{
     alphabetButton26.className = "alphabet afterClicked";
+    document.getElementById('26').style.display = "none";
     secretWordChange26();
     var temp = arrayOfImages.length;
     if(!(imgsrc.includes(arrayOfImages[temp-1]))){
