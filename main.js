@@ -12,7 +12,8 @@ Tasks in JS:
 6.Create the winner/loser screen in html/css to trigger on loss/win
 7.Make the chosen correct letter replace the underscores - Done by Angel
 8.Make the program choose a random word from the bank -Done by Angel
-
+9.Make the reset button feature
+10.Make the progress able to be saved after closing with window.localStorage
 */
 
 import { guesses,word, hiddenWord, alphabet, secretWord, secretWordChange, secretWordDiff, secretWordChange2, secretWordChange3, secretWordChange4,
