@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hangman</title>
+    <link rel="stylesheet" href="input.css">
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
     <main>
         <h1 class="text-center text-2xl pb-4">Welcome to Hangman!</h1>
-        <div class="mx-auto w-2/5 h-2/5 pb-8"> 
+        <div class="m-auto w-auto h-2/5 pb-8 justify-center items-center"> 
             <img class="show" id="img1" src="/hangman-images/4.jpg" alt="Hangman with no parts" />
             <img class="hidden" id="img2" src="/hangman-images/5.jpg" alt="Hangman with head" />
             <img class="hidden" id="img3" src="/hangman-images/6.jpg" alt="Hangman with head and body" />
@@ -51,6 +52,19 @@
             <button class="alphabet" id="24">X</button>
             <button class="alphabet" id="25">Y</button>
             <button class="alphabet" id="26">Z</button>
+        </div>
+        <!--Task 6 of making win/loss screen-->
+        <div class="win_condition" id="win">
+          <div class="win_text">
+            You Win!
+          </div>
+          <button class="winning_button">Restart</button>
+        </div>
+        <div class="lose_condition" id="lose">
+          <div class="lose_text">
+            You Lose!
+          </div>
+          <button class="losing_button">Restart</button>
         </div>
     </main>
     <script type= "module" src="./main.js"></script>

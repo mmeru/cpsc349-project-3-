@@ -5,11 +5,11 @@
 /*
 Tasks in JS:
 1.Make the underscores appear in the guesses div with the DOM -Done by Angel 
-2.Make the buttons unclickable after being clicked once - Done by Angel
+2.Make the buttons unclickable after being clicked once - Done by Angel/Moses
 3.Make the buttons correspond with the letters in the word - Done by Angel
 4.Make the image change when a wrong letter is chosen- Done by Angel 
-5.Make the lose/win conditions
-6.Create the winner/loser screen in html/css to trigger on loss/win
+5.Make the lose/win conditions- Done by Angel
+6.Create the winner/loser screen in html/css to trigger on loss/win- Done by Angel
 7.Make the chosen correct letter replace the underscores - Done by Angel
 8.Make the program choose a random word from the bank -Done by Angel
 9.Make the reset button feature
@@ -41,6 +41,19 @@ const img7src = document.getElementById('img7').src;
 var newGuessContent = document.createTextNode(secretWord.join(" "));
 guessClass.append(newGuess);
 newGuess.append(newGuessContent);
+
+//Task 5 make win/loss condtions 
+function checkWin(){
+    if(!(secretWordDiff.includes('_'))){
+        document.getElementById('win').className = ('win_condition show');
+    }
+}
+
+function checkLoss(){
+    if(img7.className == 'show'){
+        document.getElementById('lose').className = ('lose_condition show');
+    }
+}
 //Make buttons only clickable once 
 //secretWordChange changes the letter during the click event 
 var alphabetButton1 = document.getElementById('1');
@@ -82,6 +95,8 @@ alphabetButton1.addEventListener('click', () =>{
     else img7.className = "hidden";
     //set the html to the new values using the DOM
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 }, {once:true});
 
 var alphabetButton2 = document.getElementById('2');
@@ -119,6 +134,8 @@ alphabetButton2.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton3 = document.getElementById('3');
@@ -156,6 +173,8 @@ alphabetButton3.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 }, {once:true});
 
 var alphabetButton4 = document.getElementById('4');
@@ -193,6 +212,8 @@ alphabetButton4.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton5 = document.getElementById('5');
@@ -230,6 +251,8 @@ alphabetButton5.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton6 = document.getElementById('6');
@@ -267,6 +290,8 @@ alphabetButton6.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton7 = document.getElementById('7');
@@ -304,6 +329,8 @@ alphabetButton7.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton8 = document.getElementById('8');
@@ -341,6 +368,8 @@ alphabetButton8.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton9 = document.getElementById('9');
@@ -378,6 +407,8 @@ alphabetButton9.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton10 = document.getElementById('10');
@@ -415,6 +446,8 @@ alphabetButton10.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton11 = document.getElementById('11');
@@ -452,6 +485,8 @@ alphabetButton11.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton12 = document.getElementById('12');
@@ -489,6 +524,8 @@ alphabetButton12.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton13 = document.getElementById('13');
@@ -526,6 +563,8 @@ alphabetButton13.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton14 = document.getElementById('14');
@@ -563,6 +602,8 @@ alphabetButton14.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton15 = document.getElementById('15');
@@ -600,6 +641,8 @@ alphabetButton15.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton16 = document.getElementById('16');
@@ -637,6 +680,8 @@ alphabetButton16.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton17 = document.getElementById('17');
@@ -674,6 +719,8 @@ alphabetButton17.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton18 = document.getElementById('18');
@@ -711,6 +758,8 @@ alphabetButton18.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton19 = document.getElementById('19');
@@ -748,6 +797,8 @@ alphabetButton19.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton20 = document.getElementById('20');
@@ -785,6 +836,8 @@ alphabetButton20.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 }, {once:true});
 
 var alphabetButton21 = document.getElementById('21');
@@ -822,6 +875,8 @@ alphabetButton21.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton22 = document.getElementById('22');
@@ -859,6 +914,8 @@ alphabetButton22.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton23 = document.getElementById('23');
@@ -896,6 +953,8 @@ alphabetButton23.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton24 = document.getElementById('24');
@@ -933,6 +992,8 @@ alphabetButton24.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton25 = document.getElementById('25');
@@ -970,6 +1031,8 @@ alphabetButton25.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
 
 var alphabetButton26 = document.getElementById('26');
@@ -1007,9 +1070,12 @@ alphabetButton26.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
 });
+
 //console logs for testing values 
-console.log(word);
-console.log(arrayOfImages);
-console.log(img.innerHTML);
+console.log(word[0]);
+console.log(secretWordDiff[1]);
+console.log('yes');
 

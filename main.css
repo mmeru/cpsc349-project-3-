@@ -541,9 +541,8 @@ video {
   position: relative;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.m-auto {
+  margin: auto;
 }
 
 .block {
@@ -570,8 +569,8 @@ video {
   height: 40%;
 }
 
-.w-2\/5 {
-  width: 40%;
+.w-auto {
+  width: auto;
 }
 
 .transform {
@@ -580,6 +579,14 @@ video {
 
 .resize {
   resize: both;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .truncate {
@@ -674,6 +681,10 @@ video {
   display: block;
 }
 
+.hidden{
+  display: none;
+}
+
 .alphabet{
   font-size:1.5rem;
   background-color: blue;
@@ -696,4 +707,45 @@ video {
   text-align: center;
   font-size: x-large;
   padding-bottom: 2rem;
+}
+
+.win_condition, 
+.lose_condition{
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 4rem;
+  flex-direction: column;
+}
+
+.winning_button,
+.losing_button{
+  font-size: larger;
+  background-color: white;
+  color: black;
+  border: 5px solid black;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+.winning_button:hover, 
+.losing_button:hover{
+  background-color: black;
+  color: white;
+  border-color: white;
+}
+
+.win_condition.show{
+  display: flex;
+}
+
+.lose_condition.show{
+  display: flex;
 }
