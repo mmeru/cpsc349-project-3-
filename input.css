@@ -7,6 +7,10 @@
 }
 .show{
     display: block;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: auto;
 }
 
 .hidden{
@@ -27,10 +31,23 @@
     background-color: white;
 }
 
-.afterClicked{
-    cursor: not-allowed;
+.resetbtn {
+    font-size:1.5rem;
+    background-color: red;
+    margin: 0.5rem;
+    width: 3rem;
+    height: 3rem;
 }
 
+.reset:hover {
+    color:red;
+    background-color: white;
+}
+
+.afterClicked{
+    cursor: not-allowed;
+    display: none;
+}
 
 .guesses {
     text-align: center;
