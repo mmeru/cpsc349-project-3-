@@ -587,6 +587,9 @@ video {
 
 .justify-center {
   justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: auto;
 }
 
 .truncate {
@@ -696,6 +699,19 @@ video {
 
 .alphabet:hover {
   color:blue;
+  background-color: white;
+}
+
+.resetbtn {
+  font-size:1.5rem;
+  background-color: red;
+  margin: 0.5rem;
+  width: 5rem;
+  height: 3rem;
+}
+
+.resetbtn:hover {
+  color:red;
   background-color: white;
 }
 

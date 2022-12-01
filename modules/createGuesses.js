@@ -3,13 +3,13 @@ import {alphabetButton1, alphabetButton2, alphabetButton3, alphabetButton4, alph
         alphabetButton13, alphabetButton14, alphabetButton15, alphabetButton16, alphabetButton17, alphabetButton18,
         alphabetButton19, alphabetButton20, alphabetButton21, alphabetButton22, alphabetButton23, alphabetButton24,
         alphabetButton25, alphabetButton26} from "/modules/letterButtons.js";
+import { word } from "/main.js";
 //Make the program choose a random word
 export const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'N', 'M', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-export const guesses = ['CAT'];
-export const word = guesses[Math.floor(Math.random() * guesses.length)];
+export const guesses = ['CAT', 'PANDA', 'MONKEY', 'BIRD'];
 export var arrayOfImages = [];
-var snd = new Audio("nope.mp3");
-var snd2 = new Audio("Yeah.mp3");
+var soundNope = new Audio("/sound-effects/nope.mp3");
+var soundYeah = new Audio("/sound-effects/Yeah.mp3");
 // Image source https://www.oligalma.com/en/downloads/images/hangman
 arrayOfImages.push('/hangman-images/10.jpg');
 arrayOfImages.push('/hangman-images/9.jpg');
@@ -18,13 +18,22 @@ arrayOfImages.push('/hangman-images/7.jpg');
 arrayOfImages.push('/hangman-images/6.jpg');
 arrayOfImages.push('/hangman-images/5.jpg');
 arrayOfImages.push('/hangman-images/4.jpg');
+
 export var secretWord = [];
 export var secretWordDiff = [];
+
+/*
 for (let i=0; i<word.length; i++){
     if (alphabet.includes(word[i])){
         secretWordDiff.push('_');
     }
 }
+*/
+
+export function resetArray(array){
+    array.splice(0, array.length)
+}
+
 //Make the underscores appear for each letter 
 export function hiddenWord(word){
     for (let i=0; i<word.length; i++){
@@ -40,14 +49,14 @@ export function secretWordChange(){
         {        
             if (word[i].includes(alphabetButton1.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     //checks if the word has the letter or pops the end of the array
     if (!(word.includes(alphabetButton1.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -57,13 +66,13 @@ export function secretWordChange2(){
         {        
             if (word[i].includes(alphabetButton2.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }//checks if the word has the letter or pops the end of the array
     if (!(word.includes(alphabetButton2.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -73,13 +82,13 @@ export function secretWordChange3(){
         {        
             if (word[i].includes(alphabetButton3.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton3.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -89,13 +98,13 @@ export function secretWordChange4(){
         {        
             if (word[i].includes(alphabetButton4.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton4.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -105,13 +114,13 @@ export function secretWordChange5(){
         {        
             if (word[i].includes(alphabetButton5.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton5.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -121,13 +130,13 @@ export function secretWordChange6(){
         {        
             if (word[i].includes(alphabetButton6.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton6.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -137,13 +146,13 @@ export function secretWordChange7(){
         {        
             if (word[i].includes(alphabetButton7.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton7.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -153,13 +162,13 @@ export function secretWordChange8(){
         {        
             if (word[i].includes(alphabetButton8.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton8.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -169,13 +178,13 @@ export function secretWordChange9(){
         {        
             if (word[i].includes(alphabetButton9.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton9.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -185,13 +194,13 @@ export function secretWordChange10(){
         {        
             if (word[i].includes(alphabetButton10.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton10.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -201,13 +210,13 @@ export function secretWordChange11(){
         {        
             if (word[i].includes(alphabetButton11.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton11.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -217,13 +226,13 @@ export function secretWordChange12(){
         {        
             if (word[i].includes(alphabetButton12.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton12.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -233,13 +242,13 @@ export function secretWordChange13(){
         {        
             if (word[i].includes(alphabetButton13.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton13.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -249,13 +258,13 @@ export function secretWordChange14(){
         {        
             if (word[i].includes(alphabetButton14.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton14.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -265,13 +274,13 @@ export function secretWordChange15(){
         {        
             if (word[i].includes(alphabetButton15.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton15.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -281,13 +290,13 @@ export function secretWordChange16(){
         {        
             if (word[i].includes(alphabetButton16.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton16.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -297,13 +306,13 @@ export function secretWordChange17(){
         {        
             if (word[i].includes(alphabetButton17.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton17.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -313,13 +322,13 @@ export function secretWordChange18(){
         {        
             if (word[i].includes(alphabetButton18.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton18.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -329,13 +338,13 @@ export function secretWordChange19(){
         {        
             if (word[i].includes(alphabetButton19.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton19.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -345,13 +354,13 @@ export function secretWordChange20(){
         {        
             if (word[i].includes(alphabetButton20.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton20.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -361,13 +370,13 @@ export function secretWordChange21(){
         {        
             if (word[i].includes(alphabetButton21.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton21.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -377,13 +386,13 @@ export function secretWordChange22(){
         {        
             if (word[i].includes(alphabetButton22.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton22.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -393,13 +402,13 @@ export function secretWordChange23(){
         {        
             if (word[i].includes(alphabetButton23.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton23.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -409,13 +418,13 @@ export function secretWordChange24(){
         {        
             if (word[i].includes(alphabetButton24.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton24.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -425,13 +434,13 @@ export function secretWordChange25(){
         {        
             if (word[i].includes(alphabetButton25.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton25.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
 
@@ -441,12 +450,12 @@ export function secretWordChange26(){
         {        
             if (word[i].includes(alphabetButton26.innerHTML)){
                 secretWordDiff[i] = word[i];
-                snd2.play();
+                soundYeah.play();
         }
         }
     }
     if (!(word.includes(alphabetButton26.innerHTML))){
         arrayOfImages.pop();
-        snd.play();
+        soundNope.play();
     }
 }
