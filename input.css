@@ -34,14 +34,13 @@
 .resetbtn {
     font-size:1.5rem;
     background-color: red;
-    margin: 0.5rem;
-    width: 3rem;
-    height: 3rem;
+    padding: .2rem;
+    margin:1rem;
 }
 
-.reset:hover {
+.resetbtn:hover {
     color:red;
-    background-color: white;
+    background-color: black;
 }
 
 .afterClicked{
