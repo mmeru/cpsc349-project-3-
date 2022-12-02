@@ -10,8 +10,8 @@ import { word } from '../main.js'
 export const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'N', 'M', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 export const guesses = ['CAT', 'PANDA', 'MONKEY', 'BIRD']
 export const arrayOfImages = []
-const soundNope = new Audio('/sound-effects/nope.mp3')
-const soundYeah = new Audio('/sound-effects/Yeah.mp3')
+const soundNope = new window.Audio('/sound-effects/nope.mp3')
+const soundYeah = new window.Audio('/sound-effects/Yeah.mp3')
 // Image source https://www.oligalma.com/en/downloads/images/hangman
 arrayOfImages.push('/hangman-images/10.jpg')
 arrayOfImages.push('/hangman-images/9.jpg')
