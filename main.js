@@ -53,8 +53,8 @@ let newGuessContent = document.createTextNode(secretWord.join(' '))
 guessClass.append(newGuess)
 newGuess.append(newGuessContent)
 
-const soundWin = new Audio('/sound-effects/win.wav')
-const soundLoss = new Audio('/sound-effects/loss.mp3')
+const soundWin = new window.Audio('/sound-effects/win.wav')
+const soundLoss = new window.Audio('/sound-effects/loss.mp3')
 
 // Restart game
 const restartButton = document.getElementById('endgame')
