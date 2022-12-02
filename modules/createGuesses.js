@@ -4,8 +4,8 @@ import {
   alphabetButton13, alphabetButton14, alphabetButton15, alphabetButton16, alphabetButton17, alphabetButton18,
   alphabetButton19, alphabetButton20, alphabetButton21, alphabetButton22, alphabetButton23, alphabetButton24,
   alphabetButton25, alphabetButton26
-} from '/modules/letterButtons.js'
-import { word } from '/main.js'
+} from '../../modules/letterButtons.js'
+import { word } from '../main.js'
 // Make the program choose a random word
 export const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'N', 'M', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 export const guesses = ['CAT', 'PANDA', 'MONKEY', 'BIRD']
