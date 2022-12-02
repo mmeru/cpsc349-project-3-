@@ -15,7 +15,7 @@ body{
 }
 
 nav{
-    background: blue;
+    background: blue !important;
     height: 80px;
     width: 100%;
 }
