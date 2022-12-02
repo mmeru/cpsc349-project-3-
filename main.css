@@ -587,9 +587,6 @@ video {
 
 .justify-center {
   justify-content: center;
-  align-items: center;
-  width: auto;
-  margin: auto;
 }
 
 .truncate {
@@ -682,6 +679,10 @@ video {
 
 .show{
   display: block;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: auto;
 }
 
 .hidden{
@@ -705,18 +706,18 @@ video {
 .resetbtn {
   font-size:1.5rem;
   background-color: red;
-  margin: 0.5rem;
-  width: 5rem;
-  height: 3rem;
+  padding: .2rem;
+  margin:1rem;
 }
 
 .resetbtn:hover {
   color:red;
-  background-color: white;
+  background-color: black;
 }
 
 .afterClicked{
   cursor: not-allowed;
+  display: none;
 }
 
 .guesses {
