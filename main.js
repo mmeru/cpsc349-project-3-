@@ -15,6 +15,8 @@ Tasks in JS:
 9.Make the reset button feature
 10.Make the progress able to be saved after closing with window.localStorage
 */
+import {alphabetButton1, alphabetButton2, alphabetButton3, alphabetButton4, alphabetButton5, alphabetButton6, alphabetButton7, alphabetButton8, alphabetButton9, alphabetButton10, alphabetButton11, alphabetButton12,
+    alphabetButton13, alphabetButton14, alphabetButton15, alphabetButton16, alphabetButton17, alphabetButton18, alphabetButton19, alphabetButton20, alphabetButton21, alphabetButton22, alphabetButton23, alphabetButton24, alphabetButton25, alphabetButton26} from './modules/letterButtons.js';
 
 import { guesses,word, hiddenWord, alphabet, secretWord, secretWordChange, secretWordDiff, secretWordChange2, secretWordChange3, secretWordChange4,
         secretWordChange5, secretWordChange6, secretWordChange7, secretWordChange8, secretWordChange9, secretWordChange10, secretWordChange11,
@@ -23,8 +25,6 @@ import { guesses,word, hiddenWord, alphabet, secretWord, secretWordChange, secre
         
 import {checkStorage, initStorage, writeStorageLetter, writeStorageImg, writeStorageWord, restorePage} from './modules/saveState.js';
 
-import {alphabetButton1, alphabetButton2, alphabetButton3, alphabetButton4, alphabetButton5, alphabetButton6, alphabetButton7, alphabetButton8, alphabetButton9, alphabetButton10, alphabetButton11, alphabetButton12,
-        alphabetButton13, alphabetButton14, alphabetButton15, alphabetButton16, alphabetButton17, alphabetButton18, alphabetButton19, alphabetButton20, alphabetButton21, alphabetButton22, alphabetButton23, alphabetButton24, alphabetButton25, alphabetButton26} from './modules/letterButtons.js';
 //printing out the underscores based on how many letters are in the chosen word
 hiddenWord(word);
 
