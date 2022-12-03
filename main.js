@@ -49,7 +49,7 @@ guessClass.append(newGuess);
 newGuess.append(newGuessContent);
 //Make buttons only clickable once 
 //secretWordChange changes the letter during the click event 
-var alphabetButton1 = document.getElementById('1');
+alphabetButton1 = document.getElementById('1');
 //This onclick event triggers for the alphabet 'A' key 
 alphabetButton1.addEventListener('click', () =>{
     alphabetButton1.className = "alphabet afterClicked";
@@ -93,7 +93,7 @@ alphabetButton1.addEventListener('click', () =>{
     writeStorageWord();
 }, {once:true});
 
-var alphabetButton2 = document.getElementById('2');
+alphabetButton2 = document.getElementById('2');
 alphabetButton2.addEventListener('click', () =>{
     alphabetButton2.className = "alphabet afterClicked";
     document.getElementById('2').style.display = "none";
