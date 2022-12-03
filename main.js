@@ -91,6 +91,23 @@ resetButton.addEventListener('click', () => {
     document.getElementById('9').style.removeProperty('display')
     document.getElementById('10').style.removeProperty('display')
     document.getElementById('11').style.removeProperty('display')
+    document.getElementById('12').style.removeProperty('display')
+    document.getElementById('13').style.removeProperty('display')
+    document.getElementById('14').style.removeProperty('display')
+    document.getElementById('15').style.removeProperty('display')
+    document.getElementById('16').style.removeProperty('display')
+    document.getElementById('17').style.removeProperty('display')
+    document.getElementById('18').style.removeProperty('display')
+    document.getElementById('19').style.removeProperty('display')
+    document.getElementById('20').style.removeProperty('display')
+    document.getElementById('21').style.removeProperty('display')
+    document.getElementById('22').style.removeProperty('display')
+    document.getElementById('23').style.removeProperty('display')
+    document.getElementById('24').style.removeProperty('display')
+    document.getElementById('25').style.removeProperty('display')
+    document.getElementById('26').style.removeProperty('display')
+    
+
 
     // Reset hangman image
     document.querySelectorAll('.show').forEach(isShown => {
