@@ -9,8 +9,8 @@
 export const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'N', 'M', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 export const guesses = ['CAT', 'PANDA', 'MONKEY', 'BIRD']
 export const arrayOfImages = []
-const soundNope = new window.Audio('/sound-effects/nope.mp3')
-const soundYeah = new window.Audio('/sound-effects/Yeah.mp3')
+const soundNope = new window.Audio('https://github.com/Angel-Armendariz/cpsc349-project-3-/blob/main/sound-effects/nope.mp3?raw=true')
+const soundYeah = new window.Audio('https://github.com/Angel-Armendariz/cpsc349-project-3-/blob/main/sound-effects/Yeah.mp3?raw=true')
 
 // Image source https://www.oligalma.com/en/downloads/images/hangman
 arrayOfImages.push('/hangman-images/10.jpg')
