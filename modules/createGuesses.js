@@ -1,4 +1,4 @@
-/*import {
+/* import {
   alphabetButton1, alphabetButton2, alphabetButton3, alphabetButton4, alphabetButton5, alphabetButton6,
   alphabetButton7, alphabetButton8, alphabetButton9, alphabetButton10, alphabetButton11, alphabetButton12,
   alphabetButton13, alphabetButton14, alphabetButton15, alphabetButton16, alphabetButton17, alphabetButton18,
@@ -22,7 +22,7 @@ arrayOfImages.push('/hangman-images/5.jpg')
 arrayOfImages.push('/hangman-images/4.jpg')
 export const secretWord = []
 export const secretWordDiff = []
-export let word = guesses[Math.floor(Math.random() * guesses.length)]
+export const word = guesses[Math.floor(Math.random() * guesses.length)]
 for (let i = 0; i < word.length; i++) {
   if (alphabet.includes(word[i])) {
     secretWordDiff.push('_')
