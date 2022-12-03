@@ -11,6 +11,7 @@ export const guesses = ['CAT', 'PANDA', 'MONKEY', 'BIRD']
 export const arrayOfImages = []
 const soundNope = new window.Audio('/sound-effects/nope.mp3')
 const soundYeah = new window.Audio('/sound-effects/Yeah.mp3')
+
 // Image source https://www.oligalma.com/en/downloads/images/hangman
 arrayOfImages.push('/hangman-images/10.jpg')
 arrayOfImages.push('/hangman-images/9.jpg')
@@ -34,10 +35,6 @@ for (let i=0; i<word.length; i++){
     }
 }
 */
-
-export function resetArray (array) {
-  array.splice(0, array.length)
-}
 
 // Make the underscores appear for each letter
 export function hiddenWord (word) {

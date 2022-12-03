@@ -44,6 +44,77 @@ const img7src = document.getElementById('img7').src;
 var newGuessContent = document.createTextNode(secretWord.join(" "));
 guessClass.append(newGuess);
 newGuess.append(newGuessContent);
+function resetArray (array) {
+    array.splice(0, array.length)
+  }
+// Restart game
+const restartButton = document.getElementById('endgame')
+restartButton.addEventListener('click', () => {
+  console.log('sadasdas')
+  document.getElementById('endgame').style.display = 'none'
+  // document.getElementById('win').style.display = "none";
+  // document.getElementById('lose').style.display = "none";
+  document.getElementById('reset').click()
+})
+
+// Reset game
+const resetButton = document.getElementById('reset')
+resetButton.addEventListener('click', () => {
+  // Reset word to be guessed
+    resetArray(secretWord)
+    resetArray(secretWordDiff)
+    let word = guesses[Math.floor(Math.random() * guesses.length)]
+    // console.log(word);
+    for (let i = 0; i < word.length; i++) {
+    if (alphabet.includes(word[i])) {
+        secretWordDiff.push('_')
+    }
+    }
+    // console.log(secretWordDiff);
+    hiddenWord(word)
+    newGuess.innerHTML = ''
+    newGuessContent = document.createTextNode(secretWord.join(' '))
+    newGuess.append(newGuessContent)
+
+    // Reset letter buttons
+    document.querySelectorAll('.afterClicked').forEach(isClicked => {
+        isClicked.classList.remove('afterClicked')
+    })
+
+    // Reset hangman image
+    document.querySelectorAll('.show').forEach(isShown => {
+        isShown.classList.remove('show')
+        isShown.classList.add('hidden')
+    })
+    img.classList.add('show')
+    img.classList.remove('hidden')
+    resetArray(arrayOfImages)
+    arrayOfImages.push('/hangman-images/10.jpg')
+    arrayOfImages.push('/hangman-images/9.jpg')
+    arrayOfImages.push('/hangman-images/8.jpg')
+    arrayOfImages.push('/hangman-images/7.jpg')
+    arrayOfImages.push('/hangman-images/6.jpg')
+    arrayOfImages.push('/hangman-images/5.jpg')
+    arrayOfImages.push('/hangman-images/4.jpg')
+
+    document.getElementById('endgame').style.display = 'block'
+})
+
+// Task 5 make win/loss condtions
+function checkWin () {
+  if (!(secretWordDiff.includes('_'))) {
+    document.getElementById('win').className = ('win_condition show')
+    soundWin.play()
+  }
+}
+
+function checkLoss () {
+  if (img7.className === 'show') {
+    document.getElementById('lose').className = ('lose_condition show')
+    soundLoss.play()
+  }
+}
+
 //Make buttons only clickable once 
 //secretWordChange changes the letter during the click event 
 var alphabetButton1 = document.getElementById('1');
@@ -85,6 +156,9 @@ alphabetButton1.addEventListener('click', () =>{
     else img7.className = "hidden";
     //set the html to the new values using the DOM
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    //check if the user has won or lost
+    checkWin()
+    checkLoss()
     writeStorageLetter(1);
     writeStorageImg();
     writeStorageWord();
@@ -125,6 +199,8 @@ alphabetButton2.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(2);
     writeStorageImg();
     writeStorageWord();
@@ -165,6 +241,8 @@ alphabetButton3.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(3);
     writeStorageImg();
     writeStorageWord();
@@ -205,6 +283,8 @@ alphabetButton4.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(4);
     writeStorageImg();
     writeStorageWord();
@@ -245,6 +325,8 @@ alphabetButton5.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(5);
     writeStorageImg();
     writeStorageWord();
@@ -285,6 +367,8 @@ alphabetButton6.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(6);
     writeStorageImg();
     writeStorageWord();
@@ -325,6 +409,8 @@ alphabetButton7.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(7);
     writeStorageImg();
     writeStorageWord();
@@ -365,6 +451,8 @@ alphabetButton8.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(8);
     writeStorageImg();
     writeStorageWord();
@@ -405,6 +493,8 @@ alphabetButton9.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(9);
     writeStorageImg();
     writeStorageWord();
@@ -445,6 +535,8 @@ alphabetButton10.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(10);
     writeStorageImg();
     writeStorageWord();
@@ -485,6 +577,8 @@ alphabetButton11.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(11);
     writeStorageImg();
     writeStorageWord();
@@ -525,6 +619,8 @@ alphabetButton12.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(12);
     writeStorageImg();
     writeStorageWord();
@@ -565,6 +661,8 @@ alphabetButton13.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(13);
     writeStorageImg();
     writeStorageWord();
@@ -605,6 +703,8 @@ alphabetButton14.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(14);
     writeStorageImg();
     writeStorageWord();
@@ -645,6 +745,8 @@ alphabetButton15.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(15);
     writeStorageImg();
     writeStorageWord();
@@ -685,6 +787,8 @@ alphabetButton16.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(16);
     writeStorageImg();
     writeStorageWord();
@@ -725,6 +829,8 @@ alphabetButton17.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(17);
     writeStorageImg();
     writeStorageWord();
@@ -765,6 +871,8 @@ alphabetButton18.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(18);
     writeStorageImg();
     writeStorageWord();
@@ -805,6 +913,8 @@ alphabetButton19.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(19);
     writeStorageImg();
     writeStorageWord();
@@ -845,6 +955,8 @@ alphabetButton20.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(20);
     writeStorageImg();
     writeStorageWord();
@@ -885,6 +997,8 @@ alphabetButton21.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(21);
     writeStorageImg();
     writeStorageWord();
@@ -925,6 +1039,8 @@ alphabetButton22.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(22);
     writeStorageImg();
     writeStorageWord();
@@ -965,6 +1081,8 @@ alphabetButton23.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(23);
     writeStorageImg();
     writeStorageWord();
@@ -1005,6 +1123,8 @@ alphabetButton24.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(24);
     writeStorageImg();
     writeStorageWord();
@@ -1045,6 +1165,8 @@ alphabetButton25.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(25);
     writeStorageImg();
     writeStorageWord();
@@ -1085,6 +1207,8 @@ alphabetButton26.addEventListener('click', () =>{
     } 
     else img7.className = "hidden";
     newGuessContent.innerHTML = document.querySelector('h2').innerHTML = secretWordDiff.join(" ");
+    checkWin()
+    checkLoss()
     writeStorageLetter(26);
     writeStorageImg();
     writeStorageWord();
