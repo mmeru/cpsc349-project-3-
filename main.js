@@ -49,8 +49,8 @@ newGuess.append(newGuessContent)
 function resetArray (array) {
   array.splice(0, array.length)
 }
-const soundWin = new window.Audio('/sound-effects/win.wav')
-const soundLoss = new window.Audio('/sound-effects/loss.mp3')
+const soundWin = new window.Audio('https://github.com/Angel-Armendariz/cpsc349-project-3-/blob/main/sound-effects/win.wav?raw=true')
+const soundLoss = new window.Audio('https://github.com/Angel-Armendariz/cpsc349-project-3-/blob/main/sound-effects/loss.mp3?raw=true')
 // Restart game
 const restartButton = document.getElementById('endgame')
 restartButton.addEventListener('click', () => {
