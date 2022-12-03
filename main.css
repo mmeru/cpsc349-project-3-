@@ -674,7 +674,54 @@ video {
 }
 
 *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: montserrat;
   background-color: yellowgreen;
+}
+
+nav{
+  background: blue !important;
+  height: 80px;
+  width: 100%;
+}
+
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  background-color: blue;
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover{
+  color:blue;
+  background-color: white;
 }
 
 .show{
@@ -696,6 +743,7 @@ video {
   margin: 0.5rem;
   width: 3rem;
   height: 3rem;
+  border-radius: 4px;
 }
 
 .alphabet:hover {
@@ -708,6 +756,7 @@ video {
   background-color: red;
   padding: .2rem;
   margin:1rem;
+  border-radius: 4px;
 }
 
 .resetbtn:hover {

@@ -19,7 +19,7 @@ import {
   guesses, word, hiddenWord, alphabet, secretWord, secretWordChange, secretWordDiff, secretWordChange2, secretWordChange3, secretWordChange4,
   secretWordChange5, secretWordChange6, secretWordChange7, secretWordChange8, secretWordChange9, secretWordChange10, secretWordChange11,
   secretWordChange12, secretWordChange13, secretWordChange14, secretWordChange15, secretWordChange16, secretWordChange17, secretWordChange18,
-  secretWordChange19, secretWordChange20, secretWordChange21, secretWordChange22, secretWordChange23, secretWordChange24, secretWordChange25, secretWordChange26, arrayOfImages
+  secretWordChange19, secretWordChange20, secretWordChange21, secretWordChange22, secretWordChange23, secretWordChange24, secretWordChange25, secretWordChange26, arrayOfImages, resetWord
 } from './modules/createGuesses.js'
 
 import { checkStorage, initStorage, writeStorageLetter, writeStorageImg, writeStorageWord, restorePage } from './modules/saveState.js'
@@ -49,6 +49,7 @@ newGuess.append(newGuessContent)
 function resetArray (array) {
   array.splice(0, array.length)
 }
+let wordtest 
 const soundWin = new window.Audio('https://github.com/Angel-Armendariz/cpsc349-project-3-/blob/main/sound-effects/win.wav?raw=true')
 const soundLoss = new window.Audio('https://github.com/Angel-Armendariz/cpsc349-project-3-/blob/main/sound-effects/loss.mp3?raw=true')
 // Restart game
@@ -67,14 +68,14 @@ resetButton.addEventListener('click', () => {
   // Reset word to be guessed
   resetArray(secretWord)
   resetArray(secretWordDiff)
-  const word = guesses[Math.floor(Math.random() * guesses.length)]
-  // console.log(word);
+  resetWord()
+  console.log(word);
   for (let i = 0; i < word.length; i++) {
     if (alphabet.includes(word[i])) {
       secretWordDiff.push('_')
     }
   }
-  // console.log(secretWordDiff);
+  console.log(secretWordDiff);
   hiddenWord(word)
   newGuess.innerHTML = ''
   newGuessContent = document.createTextNode(secretWord.join(' '))
@@ -184,7 +185,7 @@ alphabetButton1.addEventListener('click', () => {
   writeStorageLetter(1)
   writeStorageImg()
   writeStorageWord()
-}, { once: true })
+})
 
 const alphabetButton2 = document.getElementById('2')
 alphabetButton2.addEventListener('click', () => {
@@ -252,7 +253,7 @@ alphabetButton3.addEventListener('click', () => {
   writeStorageLetter(3)
   writeStorageImg()
   writeStorageWord()
-}, { once: true })
+})
 
 const alphabetButton4 = document.getElementById('4')
 alphabetButton4.addEventListener('click', () => {
@@ -830,7 +831,7 @@ alphabetButton20.addEventListener('click', () => {
   writeStorageLetter(20)
   writeStorageImg()
   writeStorageWord()
-}, { once: true })
+})
 
 const alphabetButton21 = document.getElementById('21')
 alphabetButton21.addEventListener('click', () => {

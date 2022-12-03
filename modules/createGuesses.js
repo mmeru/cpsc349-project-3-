@@ -22,7 +22,7 @@ arrayOfImages.push('/hangman-images/5.jpg')
 arrayOfImages.push('/hangman-images/4.jpg')
 export const secretWord = []
 export const secretWordDiff = []
-export const word = guesses[Math.floor(Math.random() * guesses.length)]
+export let word = guesses[Math.floor(Math.random() * guesses.length)]
 for (let i = 0; i < word.length; i++) {
   if (alphabet.includes(word[i])) {
     secretWordDiff.push('_')
@@ -35,6 +35,10 @@ for (let i=0; i<word.length; i++){
     }
 }
 */
+//reset the word 
+export function resetWord(){
+  word = guesses[Math.floor(Math.random() * guesses.length)]
+}
 
 // Make the underscores appear for each letter
 export function hiddenWord (word) {
