@@ -7,7 +7,7 @@
 } from '../../modules/letterButtons.js' */
 // Make the program choose a random word
 export const alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'N', 'M', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
-export const guesses = ['CAT', 'PANDA', 'MONKEY', 'BIRD']
+export const guesses = ['CAT', 'PANDA', 'MONKEY', 'BIRD', 'DOG', 'TIGER', 'LION', 'RABBIT', 'BEAR', 'KOALA', 'KANGAROO', 'TURTLE', 'DONKEY', 'BEAVER', 'SHEEP', 'ZEBRA', 'RAT', 'CAMEL']
 export const arrayOfImages = []
 const soundNope = new window.Audio('https://github.com/Angel-Armendariz/cpsc349-project-3-/blob/main/sound-effects/nope.mp3?raw=true')
 const soundYeah = new window.Audio('https://github.com/Angel-Armendariz/cpsc349-project-3-/blob/main/sound-effects/Yeah.mp3?raw=true')
