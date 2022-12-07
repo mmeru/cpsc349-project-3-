@@ -4,16 +4,19 @@
 // Another way shown in MDN web docs is export { name, draw, reportArea, reportPerimeter }; on the module and import { name, draw, reportArea, reportPerimeter } from './modules/square.js'; in the JS file
 /*
 Tasks in JS:
-1.Make the underscores appear in the guesses div with the DOM -Done by Angel
+1.Make the underscores appear in the guesses div with the DOM -Done by Angel/Moses
 2.Make the buttons unclickable after being clicked once - Done by Angel
 3.Make the buttons correspond with the letters in the word - Done by Angel
 4.Make the image change when a wrong letter is chosen- Done by Angel
-5.Make the lose/win conditions
-6.Create the winner/loser screen in html/css to trigger on loss/win
+5.Make the lose/win conditions- Done by Angel 
+6.Create the winner/loser screen in html/css to trigger on loss/win- Done by Angel
 7.Make the chosen correct letter replace the underscores - Done by Angel
 8.Make the program choose a random word from the bank -Done by Angel
-9.Make the reset button feature
-10.Make the progress able to be saved after closing with window.localStorage
+9.Make the reset button feature- Done by Moses 
+10.Make the progress able to be saved after closing with window.localStorage- Done by Thomas
+11.Made the sound effects-Moses 
+12.Made the non functional navigation- alonso 
+
 */
 import {
   guesses, word, hiddenWord, alphabet, secretWord, secretWordChange, secretWordDiff, secretWordChange2, secretWordChange3, secretWordChange4,
