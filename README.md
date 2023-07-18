@@ -1,4 +1,4 @@
-# CSUF Front-end Engineering Group Project 3
+# CSUF Front-end Engineering Project 3
 ## Creating a JavaScript game (Hangman)
 ### Project goals
 - Working with HTML, CSS, and JavaScript
