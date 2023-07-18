@@ -1,6 +1,12 @@
-# cpsc349-project-3-
-CSUF frontend engineering project 3: creating a JavaScript game. Our group will be making a hangman game.
-The parameters of the project are to work with HTML, CSS, and vanilla JavaScript. We are required to write 3 NPM script in order to start Browsersync for testing, validate HTML with vnu checker and JavaScript standard styling checker, and a script for running Tailwind CLI. The web server involved should not generate HTML dynamically or provide a backend API. The code must have a single HTML file that is valid, JavaScript that uses JavaScript Standard Styling, no inline styles or style attributes other than Tailwind CSS, no inline scripts or inline event handlers, all JS must be loaded from a module, the game state must be saved using Window.localStorage, no third part JS libraries or fetching data from a server but built in Client-side web APIs are allowed.
-After the site is completed and met to all the standards it should be published to Github Pages.
-For reference the assignment parameters are also listed here https://docs.google.com/document/d/1s1E9kEgW-NRR-mgy8LJPD5S1-c2o2_iaM2qmUlGY0AM/edit#
-Scripts: npm run dev will start browser sync, npm test will run vnu html checker and JavaScript standard style checker, npm start will run browsersync and tailwind css concurrently
+# CSUF Front-end Engineering Group Project 3
+## Creating a JavaScript game (Hangman)
+### Project goals
+- Working with HTML, CSS, and JavaScript
+- Configuring NPM scripts
+- Writing code to implement a client-side application in JavaScript
+- Implementing event listeners in JavaScript to handle user input
+- Working with the Document Object Model to alter an HTML page
+- Using the Web Storage API to persist data between page visits
+- Publishing a static site to GitHub Pages
+
+- Full assignment parameters are listed here https://docs.google.com/document/d/1s1E9kEgW-NRR-mgy8LJPD5S1-c2o2_iaM2qmUlGY0AM/edit#
